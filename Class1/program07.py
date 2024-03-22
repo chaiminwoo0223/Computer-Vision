@@ -1,4 +1,4 @@
-# 컨볼루션 적용(가우시안 스무딩과 엠보싱)하
+# 컨볼루션 적용(가우시안 스무딩과 엠보싱)하기
 import cv2 as cv
 import numpy as np
 
