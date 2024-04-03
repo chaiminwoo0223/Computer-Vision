@@ -5,7 +5,6 @@ import numpy as np
 img = np.zeros([10, 10], np.float32)
 for i in range(2,7):
     img[i,3:(i+2)] = 1
-
 print(img)
 
 ux = np.array([-1, 0, 1])
