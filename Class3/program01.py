@@ -7,7 +7,7 @@ for i in range(2,7):
     img[i,3:(i+2)] = 1
 print(img)
 
-ux = np.array([-1, 0, 1])
+ux = np.array([[-1, 0, 1]])
 uy = ux.transpose()
 k = cv.getGaussianKernel(3, 1)
 g = np.outer(k, k.transpose()) # 3 x 3 Gaussian Filter
