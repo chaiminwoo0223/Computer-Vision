@@ -1,7 +1,7 @@
 # OpenCV에 PyQt의 GUI 붙이기(비디오에서 프레임을 잡아 저장하기)
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QFileDialog
-import sys
+from PyQt5.QtWidgets import *
 import cv2 as cv
+import sys
 
 class Video(QMainWindow):
     def __init__(self):
