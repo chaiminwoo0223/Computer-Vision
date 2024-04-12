@@ -9,7 +9,8 @@ class SpecialEffect(QMainWindow):
         super().__init__()
         self.setWindowTitle('사진 특수 효과')
         self.setGeometry(200,200,800,200)
-       
+
+        # 버튼 생성
         pictureButton=QPushButton('사진 읽기',self)
         embossButton=QPushButton('엠보싱',self)
         cartoonButton=QPushButton('카툰',self)
@@ -20,7 +21,8 @@ class SpecialEffect(QMainWindow):
         self.pickCombo.addItems(['엠보싱','카툰','연필 스케치(명암)','연필 스케치(컬러)','유화'])
         quitButton=QPushButton('나가기',self)        
         self.label=QLabel('환영합니다!',self)
-        
+
+        # 버튼 위치와 크기 지정
         pictureButton.setGeometry(10,10,100,30)
         embossButton.setGeometry(110,10,100,30)
         cartoonButton.setGeometry(210,10,100,30)
@@ -30,7 +32,8 @@ class SpecialEffect(QMainWindow):
         self.pickCombo.setGeometry(510,40,110,30)                  
         quitButton.setGeometry(620,10,100,30)
         self.label.setGeometry(10,40,500,170)
-        
+
+        # 콜백 함수 지정
         pictureButton.clicked.connect(self.pictureOpenFunction)
         embossButton.clicked.connect(self.embossFunction) 
         cartoonButton.clicked.connect(self.cartoonFunction)
