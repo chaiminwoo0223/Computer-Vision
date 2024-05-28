@@ -3,7 +3,12 @@ import numpy as np
 import cv2 as cv
 import sys
 
-from sort import Sort
+try:
+    from sort import Sort
+    print("Sort 모듈이 정상적으로 import 되었습니다.")
+except ImportError as e:
+    print("Sort 모듈을 import 하는 데 실패했습니다:", e)
+
 
 def construct_yolo_v3():
     f = open('./data/coco_names.txt', 'r')
